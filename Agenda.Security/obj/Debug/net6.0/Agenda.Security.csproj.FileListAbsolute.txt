@@ -1,0 +1,14 @@
+C:\Users\Gustavo\source\repos\Agenda\Agenda.Security\bin\Debug\net6.0\Agenda.Security.deps.json
+C:\Users\Gustavo\source\repos\Agenda\Agenda.Security\bin\Debug\net6.0\Agenda.Security.runtimeconfig.json
+C:\Users\Gustavo\source\repos\Agenda\Agenda.Security\bin\Debug\net6.0\Agenda.Security.dll
+C:\Users\Gustavo\source\repos\Agenda\Agenda.Security\bin\Debug\net6.0\Agenda.Security.pdb
+C:\Users\Gustavo\source\repos\Agenda\Agenda.Security\obj\Debug\net6.0\Agenda.Security.csproj.AssemblyReference.cache
+C:\Users\Gustavo\source\repos\Agenda\Agenda.Security\obj\Debug\net6.0\Agenda.Security.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gustavo\source\repos\Agenda\Agenda.Security\obj\Debug\net6.0\Agenda.Security.AssemblyInfoInputs.cache
+C:\Users\Gustavo\source\repos\Agenda\Agenda.Security\obj\Debug\net6.0\Agenda.Security.AssemblyInfo.cs
+C:\Users\Gustavo\source\repos\Agenda\Agenda.Security\obj\Debug\net6.0\Agenda.Security.csproj.CoreCompileInputs.cache
+C:\Users\Gustavo\source\repos\Agenda\Agenda.Security\obj\Debug\net6.0\Agenda.Security.dll
+C:\Users\Gustavo\source\repos\Agenda\Agenda.Security\obj\Debug\net6.0\refint\Agenda.Security.dll
+C:\Users\Gustavo\source\repos\Agenda\Agenda.Security\obj\Debug\net6.0\Agenda.Security.pdb
+C:\Users\Gustavo\source\repos\Agenda\Agenda.Security\obj\Debug\net6.0\Agenda.Security.genruntimeconfig.cache
+C:\Users\Gustavo\source\repos\Agenda\Agenda.Security\obj\Debug\net6.0\ref\Agenda.Security.dll

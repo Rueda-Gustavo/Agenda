@@ -1,0 +1,17 @@
+C:\Users\Gustavo\source\repos\Agenda\Agenda.Infra\bin\Debug\net6.0\Agenda.Infra.deps.json
+C:\Users\Gustavo\source\repos\Agenda\Agenda.Infra\bin\Debug\net6.0\Agenda.Infra.runtimeconfig.json
+C:\Users\Gustavo\source\repos\Agenda\Agenda.Infra\bin\Debug\net6.0\Agenda.Infra.dll
+C:\Users\Gustavo\source\repos\Agenda\Agenda.Infra\bin\Debug\net6.0\Agenda.Infra.pdb
+C:\Users\Gustavo\source\repos\Agenda\Agenda.Infra\bin\Debug\net6.0\Agenda.Security.dll
+C:\Users\Gustavo\source\repos\Agenda\Agenda.Infra\bin\Debug\net6.0\Agenda.Security.pdb
+C:\Users\Gustavo\source\repos\Agenda\Agenda.Infra\obj\Debug\net6.0\Agenda.Infra.csproj.AssemblyReference.cache
+C:\Users\Gustavo\source\repos\Agenda\Agenda.Infra\obj\Debug\net6.0\Agenda.Infra.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gustavo\source\repos\Agenda\Agenda.Infra\obj\Debug\net6.0\Agenda.Infra.AssemblyInfoInputs.cache
+C:\Users\Gustavo\source\repos\Agenda\Agenda.Infra\obj\Debug\net6.0\Agenda.Infra.AssemblyInfo.cs
+C:\Users\Gustavo\source\repos\Agenda\Agenda.Infra\obj\Debug\net6.0\Agenda.Infra.csproj.CoreCompileInputs.cache
+C:\Users\Gustavo\source\repos\Agenda\Agenda.Infra\obj\Debug\net6.0\Agenda.Infra.csproj.CopyComplete
+C:\Users\Gustavo\source\repos\Agenda\Agenda.Infra\obj\Debug\net6.0\Agenda.Infra.dll
+C:\Users\Gustavo\source\repos\Agenda\Agenda.Infra\obj\Debug\net6.0\refint\Agenda.Infra.dll
+C:\Users\Gustavo\source\repos\Agenda\Agenda.Infra\obj\Debug\net6.0\Agenda.Infra.pdb
+C:\Users\Gustavo\source\repos\Agenda\Agenda.Infra\obj\Debug\net6.0\Agenda.Infra.genruntimeconfig.cache
+C:\Users\Gustavo\source\repos\Agenda\Agenda.Infra\obj\Debug\net6.0\ref\Agenda.Infra.dll
