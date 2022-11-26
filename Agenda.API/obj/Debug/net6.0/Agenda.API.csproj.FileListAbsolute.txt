@@ -1,9 +1,3 @@
-C:\Users\Gustavo\source\repos\Agenda\Agenda.API\obj\Debug\net6.0\Agenda.API.csproj.AssemblyReference.cache
-C:\Users\Gustavo\source\repos\Agenda\Agenda.API\obj\Debug\net6.0\Agenda.API.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Gustavo\source\repos\Agenda\Agenda.API\obj\Debug\net6.0\Agenda.API.AssemblyInfoInputs.cache
-C:\Users\Gustavo\source\repos\Agenda\Agenda.API\obj\Debug\net6.0\Agenda.API.AssemblyInfo.cs
-C:\Users\Gustavo\source\repos\Agenda\Agenda.API\obj\Debug\net6.0\Agenda.API.csproj.CoreCompileInputs.cache
-C:\Users\Gustavo\source\repos\Agenda\Agenda.API\obj\Debug\net6.0\Agenda.API.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Gustavo\source\repos\Agenda\Agenda.API\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\Gustavo\source\repos\Agenda\Agenda.API\bin\Debug\net6.0\appsettings.json
 C:\Users\Gustavo\source\repos\Agenda\Agenda.API\bin\Debug\net6.0\Agenda.API.exe
@@ -67,6 +61,13 @@ C:\Users\Gustavo\source\repos\Agenda\Agenda.API\bin\Debug\net6.0\Agenda.Services
 C:\Users\Gustavo\source\repos\Agenda\Agenda.API\bin\Debug\net6.0\Agenda.Infra.pdb
 C:\Users\Gustavo\source\repos\Agenda\Agenda.API\bin\Debug\net6.0\Agenda.Security.pdb
 C:\Users\Gustavo\source\repos\Agenda\Agenda.API\bin\Debug\net6.0\Agenda.Services.pdb
+C:\Users\Gustavo\source\repos\Agenda\Agenda.API\obj\Debug\net6.0\Agenda.API.csproj.AssemblyReference.cache
+C:\Users\Gustavo\source\repos\Agenda\Agenda.API\obj\Debug\net6.0\Agenda.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gustavo\source\repos\Agenda\Agenda.API\obj\Debug\net6.0\Agenda.API.AssemblyInfoInputs.cache
+C:\Users\Gustavo\source\repos\Agenda\Agenda.API\obj\Debug\net6.0\Agenda.API.AssemblyInfo.cs
+C:\Users\Gustavo\source\repos\Agenda\Agenda.API\obj\Debug\net6.0\Agenda.API.csproj.CoreCompileInputs.cache
+C:\Users\Gustavo\source\repos\Agenda\Agenda.API\obj\Debug\net6.0\Agenda.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Gustavo\source\repos\Agenda\Agenda.API\obj\Debug\net6.0\Agenda.API.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Gustavo\source\repos\Agenda\Agenda.API\obj\Debug\net6.0\staticwebassets\msbuild.Agenda.API.Microsoft.AspNetCore.StaticWebAssets.props
 C:\Users\Gustavo\source\repos\Agenda\Agenda.API\obj\Debug\net6.0\staticwebassets\msbuild.build.Agenda.API.props
 C:\Users\Gustavo\source\repos\Agenda\Agenda.API\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Agenda.API.props

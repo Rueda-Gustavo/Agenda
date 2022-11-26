@@ -22,7 +22,7 @@ namespace Agenda.API.Controllers
             _usuarioService = usuarioService;
         }
                 
-        
+        /*
         [AllowAnonymous]
         [HttpPost]
         public async Task<IActionResult> Token([FromForm] IFormCollection form)
@@ -56,7 +56,7 @@ namespace Agenda.API.Controllers
             await _usuarioService.RevokeAllAsync();
             return Ok();
         }
-         
+        */
         //Usuario teste
 
         [HttpGet("Get")]

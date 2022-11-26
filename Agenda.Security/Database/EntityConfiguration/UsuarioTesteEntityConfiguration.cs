@@ -8,7 +8,7 @@ namespace Agenda.Security.Database.EntityConfiguration
     {
         public void Configure(EntityTypeBuilder<UsuarioTeste> builder)
         {
-            builder.ToTable($"{nameof(UsuarioTeste)}s");
+            builder.ToTable($"{nameof(UsuarioTeste)}");
             builder.HasKey(k => k.Id);
 
             builder.Property(p => p.NomeUsuario)

@@ -55,8 +55,6 @@ namespace Agenda.Infra.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("UsuarioId");
-
                     b.ToTable("Eventos", (string)null);
                 });
 
@@ -80,17 +78,6 @@ namespace Agenda.Infra.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("UsuarioTeste");
-                });
-
-            modelBuilder.Entity("Agenda.Infra.Models.Eventos.Evento", b =>
-                {
-                    b.HasOne("Agenda.Security.Models.UsuarioTeste", "Usuario")
-                        .WithMany()
-                        .HasForeignKey("UsuarioId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Usuario");
                 });
 #pragma warning restore 612, 618
         }

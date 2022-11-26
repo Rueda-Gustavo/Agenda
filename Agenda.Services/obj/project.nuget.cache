@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "XCDUmXOjyfyYzx7LK/SKQ8pP9xFjHxZVkiMfn5xlDhiOTtx/H93HD2nwiTjOKKCBRHPQno0x+NMbfAZHuvx3nw==",
+  "dgSpecHash": "8aGIBNy+zQOvce1qSzTfDowyb49nwz5UiCIFoRYRLCsokDMIOXGNFhAOCszt5wCZf4RSgwD5FJ6C2K/YrSSRPg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Gustavo\\source\\repos\\Agenda\\Agenda.Services\\Agenda.Services.csproj",
   "expectedPackageFiles": [
@@ -95,7 +95,10 @@
     "C:\\Users\\Gustavo\\.nuget\\packages\\system.text.json\\6.0.0\\system.text.json.6.0.0.nupkg.sha512",
     "C:\\Users\\Gustavo\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
     "C:\\Users\\Gustavo\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
-    "C:\\Users\\Gustavo\\.nuget\\packages\\system.windows.extensions\\5.0.0\\system.windows.extensions.5.0.0.nupkg.sha512"
+    "C:\\Users\\Gustavo\\.nuget\\packages\\system.windows.extensions\\5.0.0\\system.windows.extensions.5.0.0.nupkg.sha512",
+    "C:\\Users\\Gustavo\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.11\\microsoft.aspnetcore.app.ref.6.0.11.nupkg.sha512",
+    "C:\\Users\\Gustavo\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.11\\microsoft.windowsdesktop.app.ref.6.0.11.nupkg.sha512",
+    "C:\\Users\\Gustavo\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.11\\microsoft.netcore.app.ref.6.0.11.nupkg.sha512"
   ],
   "logs": []
 }

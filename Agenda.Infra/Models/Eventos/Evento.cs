@@ -1,4 +1,5 @@
 ﻿using Agenda.Security.Models;
+using CSharpFunctionalExtensions;
 using System.Collections.ObjectModel;
 using System.ComponentModel.DataAnnotations;
 
@@ -19,6 +20,8 @@ namespace Agenda.Infra.Models.Eventos
 
         public string CodigoCorEvento { get; set; }
         
-        public UsuarioTeste? Usuario { get; set; }
+        public UsuarioTeste Usuario { get; set; }
+
+        public int UsuarioId { get; set; }    
     }
 }

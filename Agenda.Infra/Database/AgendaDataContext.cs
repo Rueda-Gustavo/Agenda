@@ -17,6 +17,6 @@ namespace Agenda.Infra.Database
         {
             modelBuilder.ApplyConfiguration(new EventoTypeConfiguration());
             base.OnModelCreating(modelBuilder);
-        }
+        }        
     }
 }

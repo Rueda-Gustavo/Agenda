@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "c5lQgLPzw65TAqByGGtwTkAeN10DfwWsCwrYx302p/xB8A472Nw5mzVKIT7S933D7+KebSrs4pQOPMbvzvyhIQ==",
+  "dgSpecHash": "frtCCaw1PZa1l9x8xUBCNblb1NgAUJDuJA8u1rN9BhGN9gub+SCFvi8x4vo1XXw/oK27W9H+wvTMxT4mqaSRLQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Gustavo\\source\\repos\\Agenda\\Agenda.API\\Agenda.API.csproj",
   "expectedPackageFiles": [
@@ -75,6 +75,7 @@
     "C:\\Users\\Gustavo\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
     "C:\\Users\\Gustavo\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512",
     "C:\\Users\\Gustavo\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\Gustavo\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
     "C:\\Users\\Gustavo\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
     "C:\\Users\\Gustavo\\.nuget\\packages\\system.configuration.configurationmanager\\5.0.0\\system.configuration.configurationmanager.5.0.0.nupkg.sha512",
     "C:\\Users\\Gustavo\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",

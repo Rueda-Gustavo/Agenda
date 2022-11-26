@@ -34,6 +34,12 @@ namespace Agenda.Security.Repositories
                                              user.Password == password);
         }
 
+        public async Task<UsuarioTeste> ObterUsuario(int usuarioId)
+        {
+            return await _context.UsuariosTeste
+                .FirstOrDefaultAsync(user => user.Id == usuarioId);
+        }
+
         //Insert, Update, Delete
         public async Task InsertUsuario(UsuarioTeste usuario)
         {

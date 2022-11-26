@@ -49,7 +49,7 @@ namespace Agenda.Security.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("UsuarioTestes", (string)null);
+                    b.ToTable("UsuarioTeste", (string)null);
 
                     b.HasData(
                         new

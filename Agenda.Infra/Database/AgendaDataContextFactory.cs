@@ -10,6 +10,7 @@ namespace Agenda.Infra.Database
             var optionsBuilder = new DbContextOptionsBuilder<AgendaDataContext>();
 
             optionsBuilder.UseSqlServer("");
+            optionsBuilder.EnableSensitiveDataLogging();
 
             return new AgendaDataContext(optionsBuilder.Options);
         }

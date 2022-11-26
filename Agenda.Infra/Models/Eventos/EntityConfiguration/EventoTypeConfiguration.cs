@@ -1,11 +1,12 @@
 ﻿using Agenda.Infra.Models.Eventos;
+using Agenda.Security.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Agenda.Infra.Eventos.Models.EntityConfiguration
 {
     public class EventoTypeConfiguration : IEntityTypeConfiguration<Evento>
-    {
+    {        
         public void Configure(EntityTypeBuilder<Evento> builder)
         {
             builder.ToTable($"{nameof(Evento)}s");
@@ -31,9 +32,10 @@ namespace Agenda.Infra.Eventos.Models.EntityConfiguration
 
             builder.HasOne(p => p.Usuario)
                    .WithMany()
-                   .HasForeignKey("UsuarioId");
-                
+                   .HasForeignKey("UsuarioId")
+                   .IsRequired(true);
 
+            builder.Ignore(p => p.Usuario);                
         }
     }
 }

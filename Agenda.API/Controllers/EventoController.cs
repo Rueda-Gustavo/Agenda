@@ -6,6 +6,8 @@ using Agenda.Services.Interfaces;
 using CSharpFunctionalExtensions;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using System.Collections.Generic;
 
 namespace Agenda.API.Controllers
 {
@@ -30,9 +32,13 @@ namespace Agenda.API.Controllers
                 return BadRequest(login.Error);
             else
             {
-                Result<IEnumerable<Evento>> result = await _eventoService.ListarTodosEventos();
+                int usuarioId = login.Value.Id;
+                Result<IEnumerable<Evento>> result = await _eventoService.ListarTodosEventos(usuarioId);
                 if (result.IsFailure)
                     return BadRequest(result.Error);
+                
+                List<Evento> eventos = result.Value.ToList();
+                eventos.ForEach(e => e.Usuario = login.Value);                
                 return Ok(result.Value);
             }
         }
@@ -45,9 +51,13 @@ namespace Agenda.API.Controllers
                 return BadRequest(login.Error);
             else
             {
-                Result<IEnumerable<Evento>> result = await _eventoService.ObterEventoPorData(dataEvento);
+                int usuarioId = login.Value.Id;
+                Result<IEnumerable<Evento>> result = await _eventoService.ObterEventoPorData(dataEvento, usuarioId);
                 if (result.IsFailure)
                     return BadRequest(result.Error);
+
+                List<Evento> eventos = result.Value.ToList();
+                eventos.ForEach(e => e.Usuario = login.Value);
                 return Ok(result.Value);
             }
         }
@@ -60,44 +70,58 @@ namespace Agenda.API.Controllers
                 return BadRequest(login.Error);
             else
             {
-                Result<Evento> result = await _eventoService.ObterEventoPorNome(nomeEvento);
+                int usuarioId = login.Value.Id;
+                Result<Evento> result = await _eventoService.ObterEventoPorNome(nomeEvento, usuarioId);
                 if (result.IsFailure)
                     return BadRequest(result.Error);
+
+                result.Value.Usuario = login.Value;
                 return Ok(result.Value);
             }
         }
 
         [HttpPost("Novo evento")]
-        public async Task<IActionResult> InserirEvento(string username, string password, string nomeEvento, DateTime dataEvento, string descricaoEvento, string codigoCor)
+        public async Task<IActionResult> InserirEvento(string username, string password, string nomeEvento, DateTime dataEvento, string descricaoEvento, string? codigoCor)
         {
             Result<UsuarioTeste> login = await _usuarioTesteService.LoginAsync(username, password);
             if (login.IsFailure)
                 return BadRequest(login.Error);
             else
             {
-                if (codigoCor == null)
-                    codigoCor = "#000"; //Cor padrão
-                Result<Evento> result = await _eventoService.IncluirEvento(nomeEvento, dataEvento, descricaoEvento, codigoCor);
+                int usuarioId = login.Value.Id;
+                Evento evento = new() { Nome = nomeEvento, Data = dataEvento, Descricao = descricaoEvento, CodigoCorEvento = codigoCor, UsuarioId = usuarioId };
+
+                if (evento.CodigoCorEvento == null)
+                    evento.CodigoCorEvento = "#000"; //Cor padrão
+
+                Result<Evento> result = await _eventoService.IncluirEvento(evento/*nomeEvento, dataEvento, descricaoEvento, codigoCor, usuarioId*/);
                 if (result.IsFailure)
                     return BadRequest(result.Error);
+
+                result.Value.Usuario = login.Value;
                 return Ok(result.Value);
             }
         }
 
         [HttpPut("Atualizar evento")]
-        public async Task<IActionResult> AtualizarEvento(string username, string password, string nomeEvento, DateTime dataEvento, string descricaoEvento, string codigoCor)
+        public async Task<IActionResult> AtualizarEvento(string username, string password, int eventoId, string nomeEvento, DateTime dataEvento, string descricaoEvento, string? codigoCor)
         {
             Result<UsuarioTeste> login = await _usuarioTesteService.LoginAsync(username, password);
             if (login.IsFailure)
                 return BadRequest(login.Error);
             else
             {
-                if (codigoCor == null)
-                    codigoCor = "#000"; //Cor padrão
-                Evento evento = new() { Nome = nomeEvento, Data = dataEvento, Descricao = descricaoEvento, CodigoCorEvento = codigoCor };
+                int usuarioId = login.Value.Id;
+                Evento evento = new() { Id = eventoId, Nome = nomeEvento, Data = dataEvento, Descricao = descricaoEvento, CodigoCorEvento = codigoCor, UsuarioId = usuarioId };                
+
+                if (evento.CodigoCorEvento == null)
+                    evento.CodigoCorEvento = "#000"; //Cor padrão                
+                                
                 Result<Evento> result = await _eventoService.AlterarEvento(evento);
                 if (result.IsFailure)
                     return BadRequest(result.Error);
+
+                result.Value.Usuario = login.Value;
                 return Ok(result.Value);
             }
         }
@@ -110,9 +134,12 @@ namespace Agenda.API.Controllers
                 return BadRequest(login.Error);
             else
             {
-                Result<Evento> result = await _eventoService.ExcluirEvento(nomeEvento);
+                int usuarioId = login.Value.Id;
+                Result<Evento> result = await _eventoService.ExcluirEvento(nomeEvento, usuarioId);
                 if (result.IsFailure)
                     return BadRequest(result.Error);
+
+                result.Value.Usuario = login.Value;
                 return Ok(result.Value);
             }
         }
